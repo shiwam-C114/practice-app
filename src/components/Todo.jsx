@@ -5,7 +5,6 @@ export default function Todo(props) {
   return (
     <div className='Todo'>
         <h2>Todo List</h2>
-        {console.log(props.todos)}
         {props.todos.map(element => 
             <TodoCard name ={element.title} status={element.status} />
         )}
