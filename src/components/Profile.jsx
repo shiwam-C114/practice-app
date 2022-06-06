@@ -5,7 +5,6 @@ export default function Profile(props) {
     const [clicked, setClicked] = useState(false)
   return (
       <div className='Profile'>
-        <div>Profile</div>
         <img src={props.img} alt="profile pic" />
         <h2>Name: {props.name}</h2>
         <h3>Age: {Age}</h3>

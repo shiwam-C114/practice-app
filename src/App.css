@@ -17,6 +17,9 @@
   flex: 2;
 }
 .Todo{
+  margin: 4%;
+  padding: 1%;
+  border: 2px gray solid;
   flex: 3;
 }
 .Profile img{
@@ -29,4 +32,10 @@
 .Profile button{
   padding: 1%;
   margin: 10px;
+}
+.green{
+  color: green;
+}
+.red{
+  color: red;
 }
