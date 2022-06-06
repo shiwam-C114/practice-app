@@ -5,10 +5,28 @@
 }
 .Parent{
   display: flex;
+  justify-content:space-evenly;
   border: 2px red solid;
 
 }
 .Profile{
-  border: 2px red solid;
+  margin: 10% 1%;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px rebeccapurple solid;
   flex: 2;
+}
+.Todo{
+  flex: 3;
+}
+.Profile img{
+
+  /* border: 2px rgb(0, 255, 0) solid; */
+  width: 90%;
+  margin: 4%;
+  border-radius: 10px;
+}
+.Profile button{
+  padding: 1%;
+  margin: 10px;
 }
