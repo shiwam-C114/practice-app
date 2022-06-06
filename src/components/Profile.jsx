@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 export default function Profile(props) {
     const [Age, setAge] = useState(+props.age)
+    const [clicked, setClicked] = useState(false)
   return (
       <div className='Profile'>
         <div>Profile</div>
@@ -10,7 +11,9 @@ export default function Profile(props) {
         <h3>Age: {Age}</h3>
         <button onClick={()=>{setAge(Age+1)}}>+</button> <button onClick={()=>{setAge(Age-1)}}>-</button>
         <br />
-        <button onClick={()=>{}}>show more detail</button>
+        <button onClick={()=>{setClicked(!clicked)}}>{clicked?"hide":"show"} more details</button>
+        <h2>{clicked?`Loaction: ${props.location}`:""}</h2>
+        <h2>{clicked?`Organisation: ${props.organisation}`:""}</h2>
         
       </div>
   )
